@@ -41,8 +41,7 @@ def sort_strings():
     else:
         res = False
     # Return the sorted strings in a JSON response
-    response_data = {'sorted_strings': sorted_strings, 
-                     "result" : res}
+    response_data = { "result" : res}
     return jsonify(response_data)
     
 
