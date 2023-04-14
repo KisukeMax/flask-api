@@ -37,7 +37,7 @@ def sort_strings():
     if has_three_letters_in_order(word_string = input_strings):
         res = True
     elif has_three_same_letters(word_string = input_strings):
-        res = False
+        res = True
     else:
         res = False
     # Return the sorted strings in a JSON response
