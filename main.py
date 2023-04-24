@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 
 def has_three_same_letters(word_string):
+    word_string = str(word_string)
     #print("Check if word_string have same 3 letters in a row for : "+word_string )
     for i in range(len(word_string) - 2):
         if word_string[i] == word_string[i+1] == word_string[i+2]:
@@ -15,6 +16,7 @@ def has_three_same_letters(word_string):
 
 
 def has_three_letters_in_order(word_string):
+    word_string = str(word_string)
     word_string = word_string.lower()  # or word_string.upper()
     #print("Check if 3 letters are in alphabetical order : " + word_string)
     for i in range(len(word_string) - 2):
